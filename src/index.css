@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.buttons {
+  background: rgb(234, 179, 8);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 179, 8, 1) 46%,
+    rgba(0, 212, 255, 1) 93%
+  );
+}
+.bg-color {
+  background-color: #212121;
+}
+.sidebar-color {
+  background-color: #303030;
+}
+.box-color {
+  background-color: #424242;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.font-teko {
+  font-family: "Teko", sans-serif;
+}
+.home {
+  width: calc(100vw - 260px);
+}
+.students{
+  width: calc(100vw - 260px);
+}
+.course{
+  width: calc(100vw - 260px);
+}
+.colleges{
+  width: calc(100vw - 260px);
+}
+.reportedForums{
+  width: calc(100vw - 260px);
+}
+.updateDetails{
+  width: calc(100vw - 260px);
+}
+.archive{
+  width: calc(100vw - 260px);
+}
+.admin{
+  width: calc(100vw - 260px);
+}
+.btn:hover {
+  background-color: #ca8a04;
+}
+::placeholder {
+  font-size: 15px;
+  left: -4px;
+}
+.sidenav:hover {
+  background-color: #424242;
+}
+.box {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.forum:hover {
+  box-shadow: 2px 2px 5px 0px rgba(48, 48, 48, 0.58);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(48, 48, 48, 0.58);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(48, 48, 48, 0.58);
+}
+.circle{
+  background-color: #424242;
+}
+.college:hover{
+  background-color: #303030;
+}
+.list-box:hover{
+  background-color: #303030;
+}
+.active{
+  background-color: #424242;
+}
+.tabs{
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs  {
+  background: #424242;
+  border-bottom: 1px solid transparent;
+}
+
+.active-tabs::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: rgb(88, 147, 241);
+}
+
+
+
+.content {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+.boxes::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #73FBFD;
+}
+
+.reports::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 4px 0px 0px 4px;
+  background-color: #ef4444;
+}
+.archived::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  border-radius: 4px 0px 0px 4px;
+  background-color: rgb(15, 170, 15);
+}
+.update::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  border-radius: 4px 0px 0px 4px;
+  background-color: #EAB308;
+}
+.modal::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #73FBFD;
+}
+.admin-box{
+  box-shadow: -1px 3px 5px 0px rgba(186,186,186,0.58);
+}
+.input-border{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #303030;
+  outline: none;
+}
